@@ -578,7 +578,7 @@ let lastStoryTime = 0;
             BABYLON.SceneLoader.ImportMesh("", "./", "emerald.obj", scene, meshes => {
                 const emeraldMesh = meshes[0];
                 emeraldMesh.position = EMERALD_PORTAL_POS.clone();
-                emeraldMesh.scaling = new BABYLON.Vector3(5, 5, 5); //can be adjusted
+                emeraldMesh.scaling = new BABYLON.Vector3(3, 3, 3); //can be adjusted
                 
                 //the glowing shell around the emerald (or orb idk what to call it)
                 const emPortal = BABYLON.MeshBuilder.CreateSphere("emPortal", { diameter: 4 }, scene);
